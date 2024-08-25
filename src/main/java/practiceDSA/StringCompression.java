@@ -31,7 +31,7 @@ public class StringCompression {
             if(message.charAt(i)==message.charAt(i+1))
                 count++;
 
-            else if(message.charAt(i)!=message.charAt(i+1)){
+            else if(message.charAt(i)!=message.charAt(i+1) && count>1){
                 output.append(message.charAt(i)).append(count);
                 count=1;
             }
