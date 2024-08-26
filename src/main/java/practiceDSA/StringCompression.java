@@ -23,7 +23,7 @@ public class StringCompression {
         //passing it to the string compression function
         System.out.println(compressedString(input_renew));
     }
-    public static StringBuilder compressedString(StringBuilder message)
+    public static StringBuilder compressedString(@org.jetbrains.annotations.NotNull StringBuilder message)
     {
         StringBuilder output = new StringBuilder();
         int count =1;
